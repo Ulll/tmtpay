@@ -1,4 +1,4 @@
-CREATE TABLE `payment_order` (
+CREATE TABLE `payorder` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_guid` int(11) NOT NULL,
   `goods_guid` varchar(128) NOT NULL DEFAULT '',
@@ -23,4 +23,4 @@ CREATE TABLE `payment_order` (
   `is_transported` enum('1','0') DEFAULT '0',
   `transportation_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
