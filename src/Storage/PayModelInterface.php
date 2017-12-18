@@ -1,9 +1,8 @@
 <?php
 
-namespace TmtPay;
+namespace TmtPay\Storage;
 
-
-interface PayInterface
+interface PayModelInterface
 {
     /**
      * 创建订单

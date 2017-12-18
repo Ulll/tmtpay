@@ -10,11 +10,11 @@ $cfg = [
 
   'host'      => 'localhost',
 
-  'database'  => 'payment',
+  'database'  => 'btmdb',
 
   'username'  => 'root',
 
-  'password'  => 'password',
+  'password'  => '124224high',
 
   'charset'   => 'utf8',
 

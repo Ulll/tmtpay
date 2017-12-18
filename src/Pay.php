@@ -2,7 +2,7 @@
 
 namespace Tmtpay;
 
-use Tmtpay\Storage\PayModel;
+use TmtPay\Storage\PayModelInterface;
 
 class Pay
 {   
@@ -11,7 +11,7 @@ class Pay
     /**
      * 支付时必需的初始化参数
      */
-    public function __construct(PayModel $payModel)
+    public function __construct(PayModelInterface $payModel)
     {
         $this->payModel = $payModel;
     }
