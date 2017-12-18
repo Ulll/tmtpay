@@ -2,6 +2,7 @@
 
 namespace Tmtpay;
 
+use Tmtpay\Storage\PayModel;
 
 class Pay
 {   

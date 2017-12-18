@@ -2,30 +2,13 @@
 
 namespace TmtPay\Storage;
 
+use Illuminate\Database\Eloquent\Model;
 
-interface PayModel
-{
+class PayModel extends Model
+{   
     /**
-     * 创建订单
-     * @return
+     * table name
+     * @var string
      */
-    public function CreateOrder();
-
-    /**
-     * 修改支付方式
-     * @return
-     */
-    public function ChangePayMethod();
-
-    /**
-     * 修改订单状态
-     * @return
-     */
-    public function ChangePayStatus();
-
-    /**
-     * 校验支付状态
-     * @return
-     */
-    public function CheckPayStatus();
+    protected $table = 'payorder';
 }
