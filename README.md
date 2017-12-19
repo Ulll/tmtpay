@@ -14,6 +14,6 @@ composer require "papajo/tmtpay"
 ```php
 $db  = new TmtPay\Storage\PayModel();
 $pay = new TmtPay\Pay($db);
-$pay->CreateOrder();
+$pay->GenerateOrderId();
 ```
 

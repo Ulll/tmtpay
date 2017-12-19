@@ -8,6 +8,7 @@ namespace TmtPay\Storage;
 
 use TmtPay\Storage\PayModelInterface;
 use TmtPay\Storage\Eloquent\PayorderModel;
+use TmtPay\Exception\TmtException;
 
 class PayModel implements PayModelInterface
 {   
@@ -15,16 +16,20 @@ class PayModel implements PayModelInterface
      * 创建订单
      * @return
      */
-    public function CreateOrder()
+    public function CreateOrder($orderdata)
     {
-
+        $paydb = new PayorderModel;
+        foreach ($orderdata as $k=>$v) {
+            $paydb->{$k} = $v;
+        }
+        return $paydb->save();
     }
 
     /**
      * 修改支付方式
      * @return
      */
-    public function ChangePayMethod()
+    public function ChangePayMethod($orderid, $method)
     {
 
     }
@@ -33,7 +38,7 @@ class PayModel implements PayModelInterface
      * 修改订单状态
      * @return
      */
-    public function ChangePayStatus()
+    public function ChangePayStatus($orderid, $status)
     {
 
     }
@@ -42,7 +47,7 @@ class PayModel implements PayModelInterface
      * 校验支付状态
      * @return
      */
-    public function CheckPayStatus()
+    public function CheckPayStatus($orderid)
     {
 
     }

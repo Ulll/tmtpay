@@ -19,6 +19,7 @@
     },
     "autoload":{
         "psr-4": {"TmtPay\\": "src"},
-        "classmap": ["src/Drivers/"]
+        "classmap": ["src/Drivers/"],
+        "files": ["src/Storage/Eloquent.php"]
     }
 }

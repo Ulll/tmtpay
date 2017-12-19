@@ -10,7 +10,7 @@ $cfg = [
 
   'host'      => 'localhost',
 
-  'database'  => 'btmdb',
+  'database'  => 'tmtpay',
 
   'username'  => 'root',
 

@@ -20,9 +20,14 @@ class Pay
      * 生成订单ID
      * @return
      */
-    public function GenerateOrderId()
+    public function GenerateOrderId($inputData)
     {
-        
+        //校验
+        //生成订单号    
+        //生成支付号
+        //入库
+        $orderData = $inputData;
+        $this->payModel->CreateOrder($orderData);
     }
 
     /**
