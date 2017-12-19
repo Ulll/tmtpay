@@ -23,7 +23,7 @@ class Pay
     public function GenerateOrderId($inputData)
     {
         //校验
-        //生成订单号    
+        //生成订单号
         //生成支付号
         //入库
         $orderData = $inputData;
