@@ -55,7 +55,7 @@ class PayModel implements PayModelInterface
     /**
      * 通过订单ID获取订单详情
      * @param  integer $orderid
-     * @return array
+     * @return object
      */
     public function getOrderDataById($orderid)
     {
