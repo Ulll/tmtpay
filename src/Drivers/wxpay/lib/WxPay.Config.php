@@ -27,6 +27,7 @@ class WxPayConfig
 	const KEY = 'xxxxxxxxxxxx';
 	const APPSECRET = 'xxxxxxxxxxxxxx';
 	
+	const NOTIFY_URL = '';
 	//=======【证书路径设置】=====================================
 	/**
 	 * TODO：设置商户证书路径
