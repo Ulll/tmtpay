@@ -13,7 +13,15 @@ composer require "papajo/tmtpay"
 
 ```php
 $db  = new TmtPay\Storage\PayModel();
-$pay = new TmtPay\Pay($db);
-$pay->GenerateOrderId();
+$inputdata = [
+    'user_guid' => 1,
+    'goods_guid' => 2,
+    'goods_type' => 'tmtpro_renew',
+    'goods_num' => 1,
+    'order_title' => '钛媒体PRO会员续费'
+];
+$pay     = new TmtPay\Pay($db);
+$orderId = $pay->GenerateOrderId($inputdata);
+$proof   = $pay->GenerateProof($orderId);
 ```
 
