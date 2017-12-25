@@ -27,4 +27,11 @@ interface PayModelInterface
      * @return
      */
     public function CheckPayStatus($orderid);
+
+    /**
+     * 通过订单ID获取订单详情
+     * @param  integer $orderid
+     * @return array
+     */
+    public function getOrderDataById($orderid);
 }

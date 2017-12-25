@@ -51,4 +51,14 @@ class PayModel implements PayModelInterface
     {
 
     }
+
+    /**
+     * 通过订单ID获取订单详情
+     * @param  integer $orderid
+     * @return array
+     */
+    public function getOrderDataById($orderid)
+    {
+        return PayorderModel::where('order_id', '=', $orderid)->firstOrFail();
+    }
 }
